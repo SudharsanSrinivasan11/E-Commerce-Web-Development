@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your E-commerce Webpage</title>
+    <style>
+       body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('C:/Users/91971/Downloads/newone.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+        min-height: 100vh;
+       }
+        body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        z-index: -1;
+        }
+        .search-bar {
+            flex-grow: 2;
+            display: flex;
+            justify-content: center;
+        }
+        .search-bar input {
+            width: 80%;
+            max-width: 500px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .row {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .flowing-promo {
+            background-color: rgba(248, 249, 250, 0.8);
+            text-align: center;
+            padding: 10px;
+            color: #333;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(255, 0, 43, 0.9);
+            padding: 10px 20px;
+        }
+        .logo {
+            width: 70px;
+        }
+        .icons {
+            display: flex;
+            gap: 15px;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(52, 58, 64, 0.9);
+            color: #fff;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .nav-link:hover {
+            background-color: #fcf3ff;
+            color: #000;
+            border-radius: 5px;
+        }
+        .info, .articles, .faqs, .footer {
+            background-color: rgba(241, 241, 241, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .bestsellers {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    position: relative;
+    z-index: 1;
+}
+
+.bestsellers h3 {
+    background-color: #343a40; 
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+        .bestseller-box {
+            background-color: rgba(248, 249, 250, 0.9);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            width: 18%;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .bestseller-box h4 {
+            margin: 10px 0 0 0;
+            font-size: 16px;
+        }
+        .reviews-section h3,
+.articles-section h3 {
+    background-color: #00FFFF; 
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+        .reviews {
+            display: flex;
+            justify-content: space-between;
+        }
+        .reviews-column {
+            width: 48%;
+        }
+        .review-box {
+            background-color: rgba(248, 249, 250, 0.9);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 15px;
+            text-align: left;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .review-box p {
+            margin: 0;
+            font-size: 14px;
+            color: #333;
+        }
+        .review-box p:last-child {
+            font-weight: bold;
+            color: #666;
+            margin-top: 5px;
+        }
+        .half {
+            width: 48%;
+        }
+        .articles {
+            display: flex;
+            justify-content: space-between;
+        }
+        .article-box {
+            background-color: rgba(248, 249, 250, 0.9);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            width: 30%;
+            text-align: left;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .article-box h4 {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+        }
+        .article-box p {
+            margin: 5px 0 0 0;
+            font-size: 14px;
+            color: #666;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="row flowing-promo">
+        <marquee behavior="scroll" direction="left">Your Ultimate Diabetes Care Destination</marquee>
+    </div>
+    <div class="row header">
+        <div class="logo">
+            <a href="FDiavDoc.html">
+                <img src="C:/Users/91971/Downloads/Diavdoc.png" alt="Logo" style="width: 100px; height: auto;">
+            </a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="icons">
+            <a href="user.html">
+                <img src="C:/Users/91971/Downloads/user.png" alt="User" style="width: 30px; height: auto;">
+            </a>
+            <a href="cart.html">
+                <img src="C:/Users/91971/Downloads/—Pngtree—shopping cart icon_4436010.png" alt="Cart" style="width: 30px; height: auto;">
+            </a>
+            <a href="chatbot.html">
+                <img src="C:/Users/91971/Downloads/Diavdoc.png" alt="Chatbot" style="width: 30px; height: auto;">
+            </a>
+        </div>
+    </div>
+    <div class="row nav">
+        <div><a href="products.html" class="nav-link">Products</a></div>
+        <div><a href="services.html" class="nav-link">Services</a></div>
+        <div><a href="experts.html" class="nav-link">Experts</a></div>
+        <div><a href="chatbot.html" class="nav-link">Ask DiavDoc</a></div>
+    </div>
+    <div class="row info">
+        <h2>About Our Company</h2>
+        <p>At <b>Diavdoc</b>, we specialize in providing personalized diabetic care products tailored to meet the unique needs of each individual.<br><br> Our offerings include custom sizes, designs, and adjustments, all crafted with precision to suit varying health conditions and diabetic levels. <br><br>We're committed to enhancing comfort and care for every customer, ensuring that managing diabetes is both effective and convenient.</p>
+    </div>
+    <div class="row bestsellers">
+        <h3 class="section-title">BEST SELLERS</h3>
+        <div class="bestseller-box">
+            <img src="C:/Users/91971/Downloads/61fNrn9KNNL._AC_UF1000,1000_QL80_.jpg" alt="Product 1" style="width:100%; height:auto;">
+            <h4>Diabetes tester</h4>
+        </div>
+        <div class="bestseller-box">
+            <img src="C:/Users/91971/Downloads/81AXad6Jc8L._AC_UF1000,1000_QL80_.jpg" alt="Product 2" style="width:100%; height:auto;">
+            <h4>Diabetic Socks</h4>
+        </div>
+        <div class="bestseller-box">
+            <img src="C:/Users/91971/Downloads/ladies-diabetic-slipper.jpg" alt="Product 3" style="width:100%; height:auto;">
+            <h4>Diabetic Slippers</h4>
+        </div>
+        <div class="bestseller-box">
+            <img src="C:/Users/91971/Downloads/il_570xN.1978193689_hvyv.jpeg" alt="Product 4" style="width:100%; height:auto;">
+            <h4>T-Shirts</h4>
+        </div>
+        <div class="bestseller-box">
+            <img src="C:/Users/91971/Downloads/shri-chyawan-ayurveda-s-diabetes-care-kit-controls-and-maintains-adequate-blood-sugar-level-100-natural-products-pack-of-4-product-images-orv9cjorwlz-p597949465-1-202301282200.jpeg" alt="Product 5" style="width:100%; height:auto;">
+            <h4>Diabetic Care Kit</h4>
+        </div>
+    </div>
+    <div class="row reviews-section">
+        <h3 class="section-title">REVIEWS</h3>
+        <div class="reviews">
+            <div class="reviews-column">
+                <div class="review-box">
+                    <p>"I purchased the Diabetic Slippers, and they have been a game-changer for me. Super comfortable and worth every penny!"</p>
+                    <p>- John Doe</p>
+                </div>
+                <div class="review-box">
+                    <p>"The diabetic care kit from Diavdoc is top-notch. It has everything I need in one package."</p>
+                    <p>- Jane Smith</p>
+                </div>
+            </div>
+            <div class="reviews-column">
+                <div class="review-box">
+                    <p>"The customer service is excellent, and the products are of high quality. Highly recommend Diavdoc."</p>
+                    <p>- Michael Johnson</p>
+                </div>
+                <div class="review-box">
+                    <p>"I have been using Diavdoc's Diabetic Socks for a month now, and they are very comfortable and durable."</p>
+                    <p>- Sarah Brown</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row articles-section">
+        <h3 class="section-title">LATEST ARTICLES</h3>
+        <div class="articles">
+            <div class="article-box">
+                <h4>Managing Diabetes: Tips and Tricks</h4>
+                <p>Dr. A.K. Sharma</p>
+                <p>Learn how to effectively manage diabetes with these expert tips.</p>
+            </div>
+            <div class="article-box">
+                <h4>Top 10 Foods for Diabetics</h4>
+                <p>Dr. N.R. Mehta</p>
+                <p>Discover the top 10 foods that can help you control your blood sugar levels.</p>
+            </div>
+            <div class="article-box">
+                <h4>Understanding Insulin Resistance</h4>
+                <p>Dr. P.K. Gupta</p>
+                <p>Get insights into what insulin resistance is and how to manage it.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row faqs">
+        <h3 class="section-title">FREQUENTLY ASKED QUESTIONS (FAQ)</h3>
+        <p>Find answers to some of the most common questions about diabetes and our products.</p>
+    </div>
+    <div class="row footer">
+        <div class="half">
+            <h4>Contact Us</h4>
+            <p>Email: contact@diavdoc.com</p>
+            <p>Phone: +91-9876543210</p>
+        </div>
+        <div class="half">
+            <h4>Follow Us</h4>
+            <p>Facebook | Twitter | Instagram</p>
+        </div>
+    </div>
+</body>
+</html>
